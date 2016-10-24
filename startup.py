@@ -5,19 +5,19 @@ app = Flask(__name__)
 def gallery():
 	return render_template('gallery.html')
 	
-@app.route('/home/people')
+@app.route('/gallery/people')
 def people():
 	return render_template('people.html')
 	
-@app.route('/home/animals')
+@app.route('/gallery/animals')
 def animals():
 	return render_template('animals.html')
 	
-@app.route('/home/landscape')
+@app.route('/gallery/landscape')
 def landscape():
 	return render_template('landscape.html')
 	
-@app.route('/home/')
+@app.route('/gallery/buildings')
 def buildings():
 	return render_template('buildings.html')
 
