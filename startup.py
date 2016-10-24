@@ -6,19 +6,19 @@ def home():
 	return render_template('main.html')
 	
 @app.route('/home/gallery_people')
-def home():
+def gallery_people():
 	return render_template('gallery_people.html')
 	
 @app.route('/home/gallery_animals')
-def home():
+def gallery_animals():
 	return render_template('gallery_animals.html')
 	
 @app.route('/home/gallery_landscape')
-def home():
+def gallery_landscape():
 	return render_template('gallery_landscape.html')
 	
 @app.route('/home/gallery_buildings')
-def home():
+def gallery_buildings():
 	return render_template('gallery_buildings.html')
 
 
