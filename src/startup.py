@@ -20,6 +20,14 @@ def landscape():
 @app.route('/gallery/buildings')
 def buildings():
 	return render_template('buildings.html')
+	
+@app.route('/')
+def redirect():
+	return redirect(url_for('gallery'))
+
+@app.errorhandler(404)
+def handler404(e):
+	return render_template('404.html')
 
 
 if __name__ == ("__main__"):
