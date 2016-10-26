@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect
 app = Flask(__name__)
 
 @app.route('/gallery/')
@@ -22,8 +22,8 @@ def buildings():
 	return render_template('buildings.html')
 	
 @app.route('/')
-def redirect():
-	return redirect(url_for('gallery'))
+def redirects():
+	return redirect('gallery')
 
 @app.errorhandler(404)
 def handler404(e):
